@@ -37,4 +37,4 @@ if (file_exists($local_settings)) {
 * See https://www.drupal.org/documentation/modules/file for more information
 * about securing private files.
 */
-# $settings['file_private_path'] = '../private';
+$settings['file_private_path'] = '../private';
