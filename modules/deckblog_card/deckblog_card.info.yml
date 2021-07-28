@@ -1,5 +1,0 @@
-name: 'DeckBlog Card'
-type: module
-description: "module for DeckBlog consuming API"
-package: 'DeckBlog Modules'
-core_version_requirement: ^8 || ^9

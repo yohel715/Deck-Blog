@@ -1,5 +1,9 @@
 name: 'DeckBlog Card'
-type: module
 description: "module for DeckBlog consuming API"
 package: 'DeckBlog Modules'
-core_version_requirement: ^8 || ^9
+
+type: module
+core_version_requirement: ^8.0.0 || ^9.0
+
+dependencies:
+  - node

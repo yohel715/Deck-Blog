@@ -1,0 +1,33 @@
+# core.entity_view_display.node.card_of_the_day.default.yml
+# define el display del content type
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.card_of_the_day.field_image_card_of_the_day
+    - node.type.card_of_the_day
+  module:
+    - image
+    - user
+id: node.card_of_the_day.default
+targetEntityType: node
+bundle: card_of_the_day
+mode: default
+content:
+  field_image_card_of_the_day:
+    weight: 101
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

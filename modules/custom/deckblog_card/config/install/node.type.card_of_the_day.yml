@@ -1,0 +1,19 @@
+# node.type.card_of_the_day.yml
+# define el content type
+
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Card of the Day'
+type: card_of_the_day
+description: 'Tipo de contenido para mostrar el card of the day'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
