@@ -8,9 +8,9 @@ use Drupal\Core\Block\BlockBase;
 
 /**
  * @Block(
- *   id = "Drupal Block",
- *   admin_label = @translation("Drupal Block"),
- *   category = @translation("Drupal Block"),
+ *   id = "Card Block",
+ *   admin_label = @translation("Card Block"),
+ *   category = @translation("Card Block"),
  * )
  */
 
