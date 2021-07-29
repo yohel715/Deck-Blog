@@ -1,0 +1,5 @@
+name: 'Deck Block'
+description: 'Create custom block'
+package: 'DeckBlog Modules'
+type: module
+core_version_requirement: ^8.8.0 || ^9.0
