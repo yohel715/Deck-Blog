@@ -21,13 +21,23 @@ class DeckBlock extends BlockBase{
 
   public function build(){
     return [
-      '#markup' => $this->getFrases(),
+      '#markup' => $this->getFrases(), $this->getCards(),
       '#cache' => [
         'max-age' => 0,
       ]
     ];
   }
+  
    private function getFrases(){
+    $frase = [
+      'Hola, que tal',
+      'Otras vez por aquí?',
+      'Nos vemos pronto!!!'
+    ];
+    return $frase[array_rand($frase)];
+   }
+
+   private function getCards(){
     $frase = [
       'Hola, que tal',
       'Otras vez por aquí?',
