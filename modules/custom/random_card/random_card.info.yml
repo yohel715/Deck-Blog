@@ -1,0 +1,9 @@
+name: 'Random Card'
+type: module
+description: 'Randomize cards'
+core_version_requirement: ^8 || ^9
+package: 'Deckblog Module'
+dependencies:
+  - libraries
+library_dependencies:
+  - underscore

@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains random_card.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function random_card_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the random_card module.
+    case 'help.page.random_card':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Randomize cards') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function random_card_theme() {
+  return [
+    'random_card' => [
+      'variables' => [],
+    ],
+  ];
+}
