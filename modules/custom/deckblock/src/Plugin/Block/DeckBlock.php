@@ -21,7 +21,7 @@ class DeckBlock extends BlockBase{
 
   public function build(){
     return [
-      '#markup' => $this->getFrases(),
+      '#markup' => $this->getId(),
       '#cache' => [
         'max-age' => 0,
       ]
@@ -30,18 +30,27 @@ class DeckBlock extends BlockBase{
   
    private function getFrases(){
     $frase = [
-      'Hola, que tal',
-      'Otras vez por aquí?',
-      'Nos vemos pronto!!!'
+      1,
+      2,
+      3,
     ];
 
-    $card = [
-      'Hola, que tal',
-      'Otras vez por aquí?',
-      'Nos vemos pronto!!!'
-    ];
-
-    return $frase[array_rand($frase, $card)];
+    return $frase[array_rand($frase)];
    }
+
+   private function getId(){
+
+    $id =$this -> getFrases();
+
+    $ids = [
+      'Este es el id 1',
+      'Este es el id 2',
+      'Este es el id 3',
+    ];
+
+    return $ids[$id];
+
+  }
+
 
 }
